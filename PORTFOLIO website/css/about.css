@@ -1,0 +1,913 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+body{
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/030/191/494/small_2x/super-big-machine-technology-background-ai-photo.jpg');
+    background-size: cover;
+    /* background-color: rgb(255,188,243); */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.topnav, .navlinks{
+    display: flex;
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 1100;
+    justify-content: right;
+    margin-right: 50px;
+    text-decoration: none;
+    gap: 3rem;
+    list-style: none;
+    font-size: 20px;
+}
+.navlinks a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    /* box-shadow: 0 5px 15px rgba(0,0,0,0.06); */
+    font-family: 'lacquer', sans-serif;
+    transition: .2s;
+}
+.navlinks a:hover{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+}
+.navlinks a.active{
+    color:white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.hed{
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.hed h1{
+    font-family: 'lacquer', sans-serif;
+    color: white;
+    justify-content: center;
+    font-size: 80px;
+}
+
+.drop{
+    display: none;
+}
+
+.drop li{
+    list-style: none;
+}
+
+
+.topnav ul li:hover .drop{
+    display: block;
+    position: absolute;
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 5px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 8px;
+    font-weight: 200;
+    transition: .2s;
+    margin: 10px;
+   
+}
+
+.topnav ul li:hover .drop ul{
+    display: block;
+    
+}
+
+.topnav ul li:hover .drop ul li{
+    padding: 5px;
+    text-align: left;
+}
+
+/* .topnav ul li:hover .drop ul li a:hover{} */
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14vw;
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+    height: 55vh;
+    color: white;
+    width: 70vw;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.abox{
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.abox p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Coming Soon', cursive;
+    font-size: 22px;
+    color: white;
+    margin-left: 22px;
+    margin-right: 22px;
+    /* padding: 22px; */
+}
+
+
+.skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    margin-left: 8vw;
+    background-color: linear-gradient(135deg,url(#GradientColor),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+    height: 33vh;
+    width: 80vw;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+
+.bars{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sbox{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.python{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+    
+}
+
+.c{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    margin-left: 50px;
+    color: white;
+    margin-right: 50px;
+}
+
+.blender{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.fusion{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.h{
+    width: 160px;
+    height: 160px;
+    color: white;
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.hnm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.hnm h5{
+    font-family: 'Coming Soon', cursive;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 20px;
+    margin-left: 35px;
+}
+.outer{
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+
+.inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 120px;
+    width: 120px;
+    border-radius: 100px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 30px; 
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.num p{
+    font-size: 18px;
+    font-family: 'Coming Soon', cursive;
+}
+
+
+
+.python svg circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 570;
+    stroke-dashoffset: 0;
+    
+    
+}
+
+.c svg circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: calc(570 * .5);
+    stroke-dashoffset: 0;
+    
+}
+
+.blender svg circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: calc(570 * .7);
+    stroke-dashoffset: 0;
+    
+}
+
+.fusion svg circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: calc(570 * .75);
+    stroke-dashoffset:0;
+    
+    
+}
+
+.h svg circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: calc(560 * .65);
+    stroke-dashoffset: 0;
+    
+}
+
+svg{
+    position: absolute;
+    top: 76.5px;
+    left: 0;
+    transform: rotateZ(-90deg);
+}
+
+
+.intern{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    /* margin-left: 14vw; */
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+    height: auto;
+    width: auto;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 40vh;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.internbox{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+.suvidha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 30px;
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+    height: auto;
+    width: auto;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    padding: 10px;
+}
+
+.suvidha li{
+    margin-left: 10vh;
+    list-style: none;
+
+}
+
+.suvidha li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.suvidha li a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.pname{
+    font-size: 36px;
+    font-family: 'Coming Soon', cursive;
+    font-weight: 500;
+    color: white;
+}
+
+.company{
+    font-size: 22px;
+    font-family: 'Coming Soon', cursive;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.certi{
+    font-size: 16px;
+    font-family: 'Coming Soon', cursive;
+    font-weight: 300;
+    color: white;
+    /* margin: 10px; */
+}
+
+.datei{
+    font-size: 16px;
+    font-family: 'Coming Soon', cursive;
+    font-weight: 100;
+    color: white;
+}
+
+
+.achiev{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    /* margin-left: 14vw; */
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+    height: auto;
+    width: auto;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 35vh;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.achievbox{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.inno{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 30px;
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+    height: auto;
+    width: auto;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    padding: 10px;
+}
+
+.inno li{
+    margin-left: 10vh;
+    list-style: none;
+}
+
+.prize{
+    font-size: 26px;
+    font-family: 'Coming Soon', cursive;
+    font-weight: 200;
+    color: white;
+    margin-top: 10px;
+}
+
+
+
+.inno li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.inno li a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.comm{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    /* margin-left: 14vw; */
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+    height: auto;
+    width: auto;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 35vh;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.commbox{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.commm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 30px;
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+    height: auto;
+    width: auto;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    padding: 10px;
+}
+
+
+
+
+.commm li{
+    margin-left: 10vh;
+    list-style: none;
+}
+
+
+.int{
+    display: flex;
+    flex-direction: row;
+    justify-content: top;
+    align-items: center;
+    /* margin-left: 14vw; */
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+    height: auto;
+    width: auto;
+    border-radius: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 14vh;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+
+.intbox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-direction: row;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 30px;
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+    height: auto;
+    width: auto;
+    border-radius: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.3); 
+    padding: 10px;
+}
+
+
+.card li{
+    list-style: none;
+    padding: 5px;
+}
+
+.card li img{
+    border-radius: 30px;
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.3); 
+
+}
+
+
+@media (max-width:1080px){
+    .topnav{
+        font-size: 8px;
+        gap: 10px;
+        margin-right: 10px;
+    }
+
+    .navlinks a{
+        font-size: 12px;
+    }
+    
+    .navlinks a:hover,
+    .navlinks a.active{
+        color: black;
+    }
+
+    .hed h1{
+        font-size: 50px;
+    }
+
+    .about{
+        height: auto;
+        width: auto;
+        margin: 5px;
+    }
+
+    .abox p{
+        font-size: 16px;
+    }
+
+    .skills{
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .bars{
+        flex-direction: column;
+        gap: 100px;
+        margin-bottom: 180px;
+        margin-left: 0;
+    }
+    
+    .intern{
+        height: auto;
+        width: auto;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .suvidha{
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+
+    .suvidha li{
+        margin: 15px;
+    }
+
+    .internbox{
+        height: auto;
+        width: auto;
+        margin: 0px;
+        gap: 15px;
+    }
+
+    .achiev{
+        height: auto;
+        width: auto;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .inno{
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+
+    .achievbox{
+        height: auto;
+        width: auto;
+        margin: 0px;
+        gap: 15px;
+    }
+
+    .inno li{
+        margin: 15px;
+    }
+
+
+    .comm{
+        height: auto;
+        width: auto;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .commm{
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+
+    .commbox{
+        height: auto;
+        width: auto;
+        margin: 0px;
+        gap: 15px;
+    }
+
+    .commm li{
+        margin: 15px;
+    }
+
+
+    .int{
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        margin: 20%;
+        margin-top: 10px;
+        padding: 20px;
+    }
+
+    .card{
+        height: auto;
+        width: auto;
+        margin: 10px;
+    }
+
+    .intbox{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        margin: 0px;
+        gap: 15px;
+    }
+
+    .card li{
+        margin: 15px;
+    }
+
+    
+}
+
+
+
+@media (max-width:430px){
+    .topnav{
+        font-size: 8px;
+        gap: 10px;
+        margin-right: 10px;
+    }
+
+    .navlinks a{
+        font-size: 12px;
+    }
+    
+    .navlinks a:hover,
+    .navlinks a.active{
+        color: black;
+    }
+
+    .hed h1{
+        font-size: 50px;
+    }
+
+    .about{
+        height: auto;
+        width: auto;
+        margin: 5px;
+    }
+
+    .abox p{
+        font-size: 16px;
+    }
+
+    .skills{
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+    }
+    .bars{
+        flex-direction: column;
+        gap: 100px;
+        margin-bottom: 180px;
+        margin-left: 0;
+    }
+    
+    .intern{
+        height: auto;
+        width: auto;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .suvidha{
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+
+    .suvidha li{
+        margin: 15px;
+    }
+
+    .internbox{
+        height: auto;
+        width: auto;
+        margin: 0px;
+        gap: 15px;
+    }
+
+    .achiev{
+        height: auto;
+        width: auto;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .inno{
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+
+    .achievbox{
+        height: auto;
+        width: auto;
+        margin: 0px;
+        gap: 15px;
+    }
+
+    .inno li{
+        margin: 15px;
+    }
+
+
+    .comm{
+        height: auto;
+        width: auto;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .commm{
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+
+    .commbox{
+        height: auto;
+        width: auto;
+        margin: 0px;
+        gap: 15px;
+    }
+
+    .commm li{
+        margin: 15px;
+    }
+
+
+    .int{
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .card{
+        height: auto;
+        width: auto;
+        margin: 10px;
+    }
+
+    .intbox{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        margin: 0px;
+        gap: 15px;
+    }
+
+    .card li{
+        margin: 15px;
+    }
+
+    
+}

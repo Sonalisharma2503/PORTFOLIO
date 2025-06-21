@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+body{
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/030/191/494/small_2x/super-big-machine-technology-background-ai-photo.jpg');
+    background-repeat: no-repeat;
+    /* background-color: rgb(255,188,243); */
+}
+
+.topnav, .navlinks{
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+    text-decoration: none;
+    gap: 3rem;
+    list-style: none;
+    font-size: 20px;
+}
+.navlinks a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    /* box-shadow: 0 5px 15px rgba(0,0,0,0.06); */
+    font-family: 'lacquer', sans-serif;
+    transition: .2s;
+}
+.navlinks a:hover,
+.navlinks a.active{
+    color:white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.drop{
+    display: none;
+}
+
+.drop li{
+    list-style: none;
+}
+
+
+.topnav ul li:hover .drop{
+    display: block;
+    position: absolute;
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 5px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 8px;
+    font-weight: 200;
+    transition: .2s;
+    margin: 10px;
+   
+}
+
+.topnav ul li:hover .drop ul{
+    display: block;
+    
+}
+
+.topnav ul li:hover .drop ul li{
+    padding: 5px;
+    text-align: left;
+}
+
+.topnav ul li:hover .drop ul li a:hover{
+    color: white;
+}

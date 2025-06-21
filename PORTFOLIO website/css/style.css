@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+body{
+    /* background-image: url('https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg'); */
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/030/191/494/small_2x/super-big-machine-technology-background-ai-photo.jpg');
+    /* background-image: url('https://static.vecteezy.com/system/resources/thumbnails/023/627/197/small_2x/data-technology-and-abstract-background-with-connecting-line-representing-big-data-ai-generative-free-photo.jpg'); */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-color: rgb(255,188,243); */
+}
+
+.topnav, .navlinks{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 999;
+    margin-right: 50px;
+    text-decoration: none;
+    gap: 3rem;
+    list-style: none;
+    font-size: 20px;
+}
+
+.navlinks a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: 'lacquer', sans-serif;
+    transition: .2s;
+    
+    
+}
+
+.navlinks a:hover,
+.navlinks a.active{
+    color:white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: .1s;
+   
+}
+
+.drop{
+    display: none;
+}
+
+.drop li{
+    list-style: none;
+}
+
+.topnav ul li:hover .drop{
+    display: block;
+    position: absolute;
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 8px;
+    font-weight: 200;
+    transition: .3s;
+    margin: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* z-index: 9999; */
+}
+
+.topnav ul li:hover .drop ul{
+    display: block;
+    
+}
+
+.topnav ul li:hover .drop ul li{
+    padding: 5px;
+    text-align: left;
+}
+
+.topnav ul li:hover .drop ul li a:hover{
+    color: white;
+}
+
+.details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20vh auto;
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+    height: auto;
+    width: 50%;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+}
+
+.pic .img{
+    border-radius: 50%;
+    height: 400px;
+    width: 380px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0px 5px 15px;  
+    border: 1px solid  rgba(255, 255, 255, 0.5); 
+}
+
+.aboutdets{
+    margin-left: 20px;
+      
+}
+
+.hi{
+    font-size: 40px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 1000;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.name{
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Gluten', cursive;
+    color: white;
+}
+
+.about{
+    overflow: hidden;
+}
+
+.about{
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 300;
+    color: rgb(255, 81, 0);
+    position: relative;
+}
+
+.about span{
+    position: relative;
+    font-family: 'Coming Soon', cursive;
+    
+}
+
+.about span::before{
+    content: "";
+    animation: words 10s infinite;
+}
+
+@keyframes words {
+    0%,20%{
+        content: "I am a Developer.";
+    }
+    21%,40%{
+        content: "I am a Progammer.";
+    }
+    41%,60%{
+        content: "I am a ML Entusiasist.";
+    }
+    61%,80%{
+        content: "I am Passionate in Robotics.";
+    }
+    81%,100%{
+        content: "I love English.";
+    }
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+    
+}
+
+.buttons button:hover{
+    background-color: #ffffff;
+    color: rgb(66, 61, 97);
+}
+
+.buttons img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+.buttons img:hover{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
