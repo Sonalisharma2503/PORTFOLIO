@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
+body{
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/030/191/494/small_2x/super-big-machine-technology-background-ai-photo.jpg');
+    background-size: cover;
+    /* background-color: rgb(255,188,243); */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.topnav, .navlinks{
+    display: flex;
+    justify-content: right;
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 999;
+    margin-right: 50px;
+    text-decoration: none;
+    gap: 3rem;
+    list-style: none;
+    font-size: 20px;
+}
+.navlinks a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    /* box-shadow: 0 5px 15px rgba(0,0,0,0.06); */
+    font-family: 'lacquer', sans-serif;
+    transition: .2s;
+}
+.navlinks a:hover{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+}
+.navlinks a.active{
+    color:white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.drop{
+    display: none;
+}
+
+.drop li{
+    list-style: none;
+}
+
+
+.topnav ul li:hover .drop{
+    display: block;
+    position: absolute;
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 5px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 8px;
+    font-weight: 200;
+    transition: .2s;
+    margin: 10px;
+   
+}
+
+.topnav ul li:hover .drop ul{
+    display: block;
+    
+}
+
+.topnav ul li:hover .drop ul li{
+    padding: 5px;
+    text-align: left;
+}
+
+
+
+.hed{
+    display: flex;
+    justify-content: center;
+}
+
+.hed h1{
+    font-family: 'lacquer', sans-serif;
+    justify-content: center;
+    font-size: 80px;
+    color: white;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: row; */
+    margin-top: 50px;
+}
+.enum{
+    display: flex;
+    justify-content: center;
+}
+
+
+.Enum{
+    padding: 50px;
+    background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    margin: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.Enum li{
+    list-style: none;
+    font-size: 36px;
+    /* width: 80vw; */
+    height: auto;
+    font-family: 'Coming Soon', cursive;
+    color: white;
+}
+
+.Ename{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Preahvihear', sans-serif;
+    color: white;
+}
+
+.Enum li a{
+    text-decoration: none;
+    font-weight: 100;
+    color: rgb(89, 168, 241);
+}
+
+.Enum li a:hover{
+    color: white;
+}
+
+
+
+@media (max-width:430px){
+
+    
+    
+    .topnav{
+        font-size: 8px;
+        gap: 10px;
+        margin-right: 10px;
+    }
+
+    .navlinks a{
+        font-size: 12px;
+    }
+    
+    .navlinks a:hover,
+    .navlinks a.active{
+        color: black;
+    }
+
+    .hed h1{
+        font-size: 50px;
+    }
+
+    .enum{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .Enum li{
+        width: 60vw;
+        font-size: 22px;
+    }
+
+    .Ename{
+        font-size: 30px;
+    }
+
+}
+
+
+@media (max-width:400px){
+
+    
+    
+    .topnav{
+        font-size: 8px;
+        gap: 5px;
+        margin-right: 5px;
+    }
+
+    .navlinks a{
+        font-size: 12px;
+    }
+    
+    .navlinks a:hover,
+    .navlinks a.active{
+        color: black;
+    }
+
+    .hed h1{
+        font-size: 50px;
+    }
+
+    .enum{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .Enum li{
+        width: 60vw;
+        font-size: 22px;
+    }
+
+    .Ename{
+        font-size: 30px;
+    }
+
+}
